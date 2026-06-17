@@ -26,7 +26,7 @@ const variantClasses = {
 } as const;
 
 export default function WhatsAppButton({
-  label = "Orçamento no WhatsApp",
+  label = "Contato",
   variant = "whats",
   className = "",
 }: WhatsAppButtonProps) {

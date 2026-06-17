@@ -10,7 +10,9 @@ export default function Footer() {
               <span className="text-brand">Nova</span> Construsul
             </p>
             <p className="mt-1 text-sm text-white/60">{business.segment}</p>
-            <p className="mt-4 text-sm text-white/70">{business.address.full}</p>
+            <p className="mt-4 text-sm text-white/70 md:text-nowrap">
+              {business.address.full}
+            </p>
             <p className="mt-1 text-sm text-white/70">
               Telefone: {business.phone.display}
             </p>
@@ -60,7 +62,8 @@ export default function Footer() {
             Desde 1994 valorizando lares em Corumbataí do Sul - PR.
           </p>
           <p className="text-xs text-white/50">
-            Site institucional desenvolvido para apresentação comercial da empresa.
+            Site institucional desenvolvido para apresentação comercial da
+            empresa.
           </p>
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} {business.name}.

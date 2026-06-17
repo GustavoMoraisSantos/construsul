@@ -36,15 +36,29 @@ export default function Gallery() {
                   aria-hidden="true"
                   className="mb-auto inline-flex h-10 w-10 items-center justify-center rounded-lg border border-brand/30 text-brand"
                 >
-                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                  >
                     <rect x="3" y="3" width="18" height="18" rx="2" />
                     <circle cx="9" cy="9" r="1.6" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 15l-5-5L5 21" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 15l-5-5L5 21"
+                    />
                   </svg>
                 </div>
                 <figcaption>
-                  <h3 className="mt-4 text-base font-semibold text-ink">{item.title}</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted">{item.text}</p>
+                  <h3 className="mt-4 text-base font-semibold text-ink">
+                    {item.title}
+                  </h3>
+                  <p className="mt-1 text-xs leading-relaxed text-muted">
+                    {item.text}
+                  </p>
                 </figcaption>
               </figure>
             ))}
