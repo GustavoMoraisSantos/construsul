@@ -165,16 +165,24 @@ export const serviceItems = [
 
 export const galleryItems = [
   {
-    title: "Móveis e eletrodomésticos",
-    text: "Linha de móveis e eletrodomésticos disponível na loja.",
+    image: "/galeria-tubos.jpg",
+    title: "Tubos e drenagem",
+    text: "Tubos, conexões e materiais para drenagem e saneamento.",
   },
   {
-    title: "Materiais de construção",
-    text: "Variedade de materiais para todas as etapas da obra.",
+    image: "/galeria-maquina.jpg",
+    title: "Obras e terraplanagem",
+    text: "Apoio em obras, terraplanagem e movimentação de materiais.",
   },
   {
-    title: "Ferramentas e ferragens",
-    text: "Ferramentas e ferragens para profissionais e para casa.",
+    image: "/galeria-obra.jpg",
+    title: "Construção civil",
+    text: "Execução de obras e reformas do alicerce ao acabamento.",
+  },
+  {
+    image: "/galeria-perfis.jpg",
+    title: "Perfis e estruturas de aço",
+    text: "Perfis, metalons e estruturas metálicas para a sua obra.",
   },
 ] as const;
 
