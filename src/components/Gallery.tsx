@@ -50,7 +50,7 @@ export default function Gallery() {
                   className="object-cover"
                   priority={index === 0}
                 />
-                <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-5 sm:p-6">
+                <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 bg-black/25 to-transparent p-5 sm:p-6">
                   <h3 className="text-base font-semibold text-white sm:text-lg">
                     {item.title}
                   </h3>
@@ -65,7 +65,7 @@ export default function Gallery() {
               type="button"
               onClick={prev}
               aria-label="Imagem anterior"
-              className="absolute left-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-ink shadow-md transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              className="absolute left-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/25 text-ink shadow-md transition-colors hover:bg-white/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -84,7 +84,7 @@ export default function Gallery() {
               type="button"
               onClick={next}
               aria-label="Próxima imagem"
-              className="absolute right-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-ink shadow-md transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              className="absolute right-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/25 text-ink shadow-md transition-colors hover:bg-white/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
             >
               <svg
                 viewBox="0 0 24 24"
