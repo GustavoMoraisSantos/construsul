@@ -42,31 +42,19 @@ export default function Gallery() {
                 }`}
                 aria-hidden={index === current ? undefined : true}
               >
-                <div
-                  aria-hidden="true"
-                  className="mb-auto inline-flex h-10 w-10 items-center justify-center rounded-lg border border-brand/30 text-brand"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                  >
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <circle cx="9" cy="9" r="1.6" />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21 15l-5-5L5 21"
-                    />
-                  </svg>
-                </div>
-                <figcaption>
-                  <h3 className="mt-4 text-base font-semibold text-ink">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 896px"
+                  className="object-cover"
+                  priority={index === 0}
+                />
+                <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-5 sm:p-6">
+                  <h3 className="text-base font-semibold text-white sm:text-lg">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted">
+                  <p className="mt-1 max-w-xl text-xs leading-relaxed text-white/80 sm:text-sm">
                     {item.text}
                   </p>
                 </figcaption>
